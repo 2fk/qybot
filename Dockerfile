@@ -33,4 +33,4 @@ RUN apk add --update ca-certificates && rm -rf /var/cache/apk/*
 
 COPY --from=build-env /data/main /home/main
 
-ENTRYPOINT ["/home/main"]
+CMD ["/home/main"]
